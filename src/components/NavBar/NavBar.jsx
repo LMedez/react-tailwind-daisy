@@ -3,7 +3,7 @@ import React from "react";
 
 function template() {
   return (
-    <div class="navbar bg-slate-500">
+    <div class="navbar bg-slate-500 sticky top-0 z-50">
         <div class="navbar-start">
             <div class="dropdown">
             <label tabindex="0" class="btn btn-ghost btn-circle">
