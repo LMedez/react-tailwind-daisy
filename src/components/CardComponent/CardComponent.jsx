@@ -1,19 +1,19 @@
 import React from "react";
 
-function template(key) {
-    console.log(this.props.value.thumbnail)
+function template() {
+    console.log(this.props.value)
   return (
-    <div class="card w-96 bg-orange-200 text-red-900 shadow-xl mt-6">
+    <div class="card bg-orange-200 text-red-900 shadow-xl mt-6">
     <figure>
       <img
       class="object-fill h-48 w-96"
-        src={this.props.value.thumbnail}
+        src={this.props.value.background_image}
         alt="Shoes"
       />
     </figure>
     <div class="card-body">
-      <h2 class="card-title">{this.props.value.title}</h2>
-      <p>{this.props.value.short_description}</p>
+      <h2 class="card-title">{this.props.value.name}</h2>
+      <p>Released date: {this.props.value.released}</p>
       <div class="card-actions justify-end">
         <button class="btn btn-error">Buy Now</button>
       </div>
